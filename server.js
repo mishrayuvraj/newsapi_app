@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const request=require("request");
-const product=require('./api/product');
+
 
 const https=require("https");
 const app = express();
@@ -74,11 +74,11 @@ app.get("/",function(req,response){
 
     });
 
-let port =process.env.PORT;
-if(port==null||port==""){
-  port=5000;
-}
-  app.use("/api/product",product);
+let port =process.env.PORT || 5000;
+// if(port==null||port==""){
+//   port=5000;
+// }
+  
     app.listen(port,function(){
         console.log("Server started successfully");
 
