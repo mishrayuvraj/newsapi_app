@@ -2,6 +2,7 @@
   "name": "newsapi_app",
   "version": "1.0.0",
   "main": "server.js",
+  "type":"module",
   "engines": {
     "node": "16.16.0"
   },
